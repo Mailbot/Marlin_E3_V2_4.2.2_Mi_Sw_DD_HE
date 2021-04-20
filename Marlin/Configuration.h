@@ -907,7 +907,7 @@
  * Z_MIN_PROBE_PIN
  *
  * Define this pin if the probe is not connected to Z_MIN_PIN.
- * If not defined the default pin for the selected MOTHERBOARD
+ * If not defined the default pin for the selected MOTHERBOARDUSE_PROBE_FOR_Z_HOMING
  * will be used. Most of the time the default is what you want.
  *
  *  - The simplest option is to use a free endstop connector.
@@ -1054,7 +1054,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { 10, 10, -3.6 }
+#define NOZZLE_TO_PROBE_OFFSET { -96, -30, 0 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1235,7 +1235,7 @@
 #define Y_BED_SIZE 220
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
-#define X_MIN_POS -5
+#define X_MIN_POS -10-46
 #define Y_MIN_POS -10
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
